@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int a,even=0,odd=0;
+    printf("Enter the no. till you want the sum of odd and even to be printed");
+    scanf("%d",&a);
+    for (int i=1; i<=a; ++i){
+        if (i%2==0){
+            even+=i;
+        }
+        else{
+            odd+=i;
+        }
+    }printf("Sum of odd is %d and sum till even is %d",odd,even);
+
+    return 0;
+}
